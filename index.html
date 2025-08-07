@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Readmission Application Form</title>
+</head>
+<body>
+
+    <h1>Readmission Application Form</h1>
+    <form>
+
+        <p>Student's Name</p>
+        <input type="text" name="first-name" placeholder="First" required>
+        <input type="text" name="last-name" placeholder="Last" required>
+
+        <p>Student's ID</p>
+        <input type="text" name="student-id" required>
+
+        <p>Date of Birth</p>
+        <input type="date" name="dob" required>
+
+        <p>Phone</p>
+        <input type="tel" name="phone" placeholder>
+
+        <p>Email</p>
+        <input type="email" name="email" required>
+
+        <p>Address</p>
+        <input type="text" name="street-address1" placeholder="Street Address" required><br>
+        <input type="text" name="street-address2" placeholder="Street Address Line 2"><br>
+        <input type="text" name="city" placeholder="City" required>
+        <input type="text" name="region" placeholder="Region" required><br>
+        <input type="text" name="postal-code" placeholder="Postal / Zip Code" required>
+        <select name="country" required>
+            <option value="Romania">Romania</option>
+            <option value="USA">USA</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Canada">Canada</option>
+        </select>
+
+        <p>Are you an international student?</p>
+        <input type="radio" id="intl-yes" name="international-student" value="Yes" required>
+        <label for="intl-yes">Yes</label>
+        <input type="radio" id="intl-no" name="international-student" value="No">
+        <label for="intl-no">No</label>
+
+        <p>Are you Hispanic or Latino?</p>
+        <input type="radio" id="hispanic-yes" name="hispanic" value="Yes" required>
+        <label for="hispanic-yes">Yes</label>
+        <input type="radio" id="hispanic-no" name="hispanic" value="No">
+        <label for="hispanic-no">No</label>
+
+        <br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
